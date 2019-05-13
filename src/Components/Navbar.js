@@ -5,7 +5,11 @@ export class Navbar extends Component {
     return (
       <React.Fragment>
         <nav>
-          <input type="search" className="country-search-input" placeholder="Search" />
+          <input
+            type="search"
+            className="country-search-input"
+            placeholder="Search"
+          />
           <div className="dropdown">
             <button className="dropbtn">Language: EN</button>
           </div>

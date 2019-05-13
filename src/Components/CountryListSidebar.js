@@ -1,13 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import "./CountryListSidebar.css";
+import CountryItem from "./CountryItem";
 
 export class CountryListSidebar extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
-    )
+      <React.Fragment>
+        <ul>
+          <li>
+            <CountryItem />
+          </li>
+          <li>
+            <CountryItem />
+          </li>
+        </ul>
+      </React.Fragment>
+    );
   }
 }
 
-export default CountryListSidebar
+export default CountryListSidebar;
