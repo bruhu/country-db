@@ -5,9 +5,9 @@ export class Navbar extends Component {
     return (
       <React.Fragment>
         <nav>
-          <input type="search" placeholder="Search" />
+          <input type="search" className="country-search-input" placeholder="Search" />
           <div className="dropdown">
-            <button className="dropbtn">Lang: EN</button>
+            <button className="dropbtn">Language: EN</button>
           </div>
         </nav>
       </React.Fragment>

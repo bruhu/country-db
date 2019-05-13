@@ -7,5 +7,18 @@ nav {
 }
 
 .dropdown {
-    margin-left: auto;
+  margin-left: auto;
 }
+
+.dropbtn {
+  background-color: rgb(155, 155, 155);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+/* .country-search-input{
+    border-radius: 5px;
+    border-style: solid 1px black;
+} */
