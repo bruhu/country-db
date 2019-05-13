@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class Navbar extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
-    )
+      <React.Fragment>
+        <nav>
+          <input type="search" placeholder="Search" />
+          <div className="dropdown">
+            <button className="dropbtn">Lang: EN</button>
+          </div>
+        </nav>
+      </React.Fragment>
+    );
   }
 }
 
-export default Navbar
+export default Navbar;
