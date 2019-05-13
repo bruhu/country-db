@@ -6,14 +6,16 @@ export class CountryListSidebar extends Component {
   render() {
     return (
       <React.Fragment>
-        <ul>
-          <li>
-            <CountryItem />
-          </li>
-          <li>
-            <CountryItem />
-          </li>
-        </ul>
+        <div className="country-list-container">
+          <ul>
+            <li>
+              <CountryItem />
+            </li>
+            <li>
+              <CountryItem />
+            </li>
+          </ul>
+        </div>
       </React.Fragment>
     );
   }

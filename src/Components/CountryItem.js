@@ -4,7 +4,7 @@ export class CountryItem extends Component {
   render() {
     return (
       <React.Fragment>
-        <h3>Country Name</h3>
+        <h4>Country Name</h4>
         <p>Subregion</p>
       </React.Fragment>
     );
