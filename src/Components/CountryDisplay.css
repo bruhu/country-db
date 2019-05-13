@@ -6,7 +6,6 @@
 }
 
 .flag-container {
-  /* border: solid 1px rgb(155, 155, 155); */
   padding: 3em;
   -moz-box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
   -webkit-box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
