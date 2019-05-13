@@ -1,16 +1,14 @@
 .country-list-container {
   display: flex;
-  flex-direction: column;
-  /* padding: 1em; */
-  margin: 1em;
+  flex-direction: column;  
+  border-right: solid 1px rgb(182, 182, 182);
 }
 
 ul {
   list-style: none;
-  border-right: solid 1px rgb(182, 182, 182);
-  padding: 0.5em;
 }
 
 li {
   border-bottom: solid 1px rgb(182, 182, 182);
+  padding: 1em 2em;
 }
