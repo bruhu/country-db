@@ -13,7 +13,7 @@ export class CountryItem extends Component {
   componentDidMount() {
     fetch("https://restcountries.eu/rest/v2/all")
       .then(resp => resp.json())
-      .then(data => this.setState({ data }));
+      .then(data => console.log(data));
   }
 
   render() {
