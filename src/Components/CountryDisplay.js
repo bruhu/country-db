@@ -6,13 +6,13 @@ export class CountryDisplay extends Component {
       <React.Fragment>
         <div className="country-display-container">
           <div className="country-disp-text">
-            <h3>Country Name</h3>
+            <h3>name</h3>
             <p>region - subregion</p>
-            <p>Translations</p>
-            <p>Translations</p>
+            <p>translations.de</p>
+            <p>translations.it</p>
           </div>
           <div className="country-disp-img">
-            <div className="flag-container">Flag</div>
+            <div className="flag-container">flag</div>
           </div>
         </div>
       </React.Fragment>

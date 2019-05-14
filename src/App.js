@@ -25,7 +25,7 @@ export class App extends React.Component {
         <Navbar />
         <div className="country-components-container">
           <CountryListSidebar data={this.state.data} />
-          <CountryDisplay />
+          <CountryDisplay data={this.state.data}/>
         </div>
       </React.Fragment>
     );
