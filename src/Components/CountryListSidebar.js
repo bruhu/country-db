@@ -3,6 +3,7 @@ import "./CountryListSidebar.css";
 import CountryItem from "./CountryItem";
 
 export class CountryListSidebar extends Component {
+  
   render() {
     return (
       <React.Fragment>

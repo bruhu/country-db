@@ -15,7 +15,7 @@ nav {
   border: solid 1px rgb(182, 182, 182);
   color: rgb(128, 128, 128);
   padding: 10px 25px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
 }
 
@@ -24,8 +24,3 @@ nav {
   border: solid 1px rgb(182, 182, 182);
   color: white;
 }
-
-/* .country-search-input{
-    border-radius: 5px;
-    border-style: solid 1px black;
-} */
