@@ -3,19 +3,27 @@ import "./CountryDisplay.css";
 export class CountryDisplay extends Component {
   render() {
     return (
-      <React.Fragment>
-        <div className="country-display-container">
-          <div className="country-disp-text">
-            <h3>name</h3>
-            <p>region - subregion</p>
-            <p>translations.de</p>
-            <p>translations.it</p>
-          </div>
-          <div className="country-disp-img">
-            <div className="flag-container">flag</div>
-          </div>
+      <div className="country-display">
+        
+          {this.props.data &&
+            this.props.data.map((country, index) => (
+              <div className="country-display-container">
+              <div key={index} className="country-disp-text">
+                <h3>{country.name}</h3>
+                <p>
+                  {country.region} - {country.subregion}
+                </p>
+                <p>DE: {country.translations.de}</p>
+                <p>IT: {country.translations.it}</p>
+                <p>ES: {country.translations.es}</p>
+                <div className="country-disp-img">
+                  <img src={country.flag} />
+                </div>
+              </div>
+              </div>
+            ))}
         </div>
-      </React.Fragment>
+        
     );
   }
 }
