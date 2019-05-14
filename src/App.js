@@ -23,7 +23,7 @@ export class App extends React.Component {
       <React.Fragment>
         <Navbar />
         <div className="country-components-container">
-          <CountryListSidebar data={this.state.data}/>
+          <CountryListSidebar data={this.state.data} />
           <CountryDisplay />
         </div>
       </React.Fragment>
