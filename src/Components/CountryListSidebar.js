@@ -8,10 +8,11 @@ export class CountryListSidebar extends Component {
       <React.Fragment>
         <div className="country-list-container">
           <ul>
-            {/* inside of ul do a map that iterates over data and renders a li */}
-            <li>
-              <CountryItem />
-            </li>
+            {/* issue was - bc no change of state, no re-render, so fetch wasn't happening and there was no information to get! */}
+            {this.props.data &&
+              this.props.data.map((country, index) => (
+                <li key={index}>Hello, {country.name}</li>
+              ))}
           </ul>
         </div>
       </React.Fragment>

@@ -15,7 +15,8 @@ export class App extends React.Component {
   componentDidMount() {
     fetch("https://restcountries.eu/rest/v2/all")
       .then(resp => resp.json())
-      .then(data => this.setState({ data }));
+      .then(data => this.setState({ data }))
+      .catch(error => console.error);
   }
 
   render() {
