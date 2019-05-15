@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "./CountryListSidebar.css";
+import "./Sidebar.css";
 import CountryItem from "./CountryItem";
+import AppContext from "./AppContext";
 
 export class CountryListSidebar extends Component {
   render() {
@@ -8,7 +9,14 @@ export class CountryListSidebar extends Component {
       <React.Fragment>
         <div className="country-list-container">
           <ul>
-            <CountryItem data={this.props.data} />
+            <AppContext.Consumer>
+              {context =>
+                context.data &&
+                context.data.map((country, index) => (
+                  <CountryItem country={country} key={index} />
+                ))
+              }
+            </AppContext.Consumer>
           </ul>
         </div>
       </React.Fragment>

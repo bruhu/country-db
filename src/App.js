@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import CountryListSidebar from "./Components/CountryListSidebar";
+import Sidebar from "./Components/Sidebar";
 import CountryDisplay from "./Components/CountryDisplay";
+import AppProvider from "./Components/AppProvider";
 
 export class App extends React.Component {
   // constructor(props) {
@@ -21,15 +22,30 @@ export class App extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Navbar />
-        <div className="country-components-container">
-          <CountryListSidebar data={this.state.data} />
-          <CountryDisplay data={this.state.data} />
-        </div>
-      </React.Fragment>
+      <AppProvider>
+        <React.Fragment>
+          <Navbar />
+          <div className="country-components-container">
+            <Sidebar />
+            <CountryDisplay />
+          </div>
+        </React.Fragment>
+      </AppProvider>
     );
   }
 }
 
+// render() {
+//   return (
+//     <React.Fragment>
+//       <Navbar />
+//       <div className="country-components-container">
+//         <CountryListSidebar data={this.state.data} />
+//         <CountryDisplay data={this.state.data}/>
+//       </div>
+//     </React.Fragment>
+//   );
+// }
+
 export default App;
+
