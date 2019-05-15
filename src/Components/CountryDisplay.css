@@ -5,10 +5,14 @@
   flex-direction: row;
 }
 
-.flag-container {
+/* .flag-container {
   padding: 3em;
   -moz-box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
   -webkit-box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
   box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
   margin-left: 20em;
+} */
+
+.country-disp-img {
+  max-width: 300px;
 }

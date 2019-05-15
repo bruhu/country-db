@@ -16,8 +16,8 @@ export class CountryDisplay extends Component {
                 <p>DE: {country.translations.de}</p>
                 <p>IT: {country.translations.it}</p>
                 <p>ES: {country.translations.es}</p>
-                <div className="country-disp-img">
-                  <img src={country.flag} />
+                <div >
+                  <img src={country.flag} className="country-disp-img" />
                 </div>
               </div>
               </div>
