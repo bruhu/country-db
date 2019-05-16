@@ -6,7 +6,15 @@ export default class AppProvider extends React.Component {
     super(props);
     this.state = {
       data: null,
-      
+      selectCountry: {},
+      selectCountryFunc: e => {
+        // innerText = the country name in countryItem
+        const clickedCountry = e.target.innerText;
+        const filter = this.state.data.filter(
+          country => country.name === clickedCountry
+        );
+        this.setState({ selectCountry: filter[0] });
+      }
     };
   }
 
