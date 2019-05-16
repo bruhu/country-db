@@ -10,26 +10,22 @@ export class CountryDisplay extends Component {
             {context => {
               return (
                 <div className="country-disp-text">
-                  <h3>{context.selectCountry.name}</h3>
-                  <p>
-                    {context.selectCountry.region} -
-                    {context.selectCountry.subregion}
-                  </p>
-                  <p>
-                    DE:{" "}
-                    {context.selectCountry.translation &&
-                      context.selectCountry.translations.de}
-                  </p>
-                  <p>
-                    IT:{" "}
-                    {context.selectCountry.translation &&
-                      context.selectCountry.translations.it}
-                  </p>
-                  <p>
-                    ES:{" "}
-                    {context.selectCountry.translation &&
-                      context.selectCountry.translations.es}
-                  </p>
+                  {context.selectCountry.name && (
+                    <div>
+                      <h3>{context.selectCountry.name}</h3>
+                      <p>
+                        {context.selectCountry.region} -{" "}
+                        {context.selectCountry.subregion}
+                      </p>
+                    </div>
+                  )}
+                  {context.selectCountry.translations && (
+                    <div>
+                      <p>DE: {context.selectCountry.translations.de}</p>
+                      <p>IT: {context.selectCountry.translations.it}</p>
+                      <p>ES: {context.selectCountry.translations.es}</p>
+                    </div>
+                  )}
                   <div>
                     {context.selectCountry.flag && (
                       <img
