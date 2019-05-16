@@ -9,8 +9,8 @@ export class CountryItem extends Component {
         <AppContext.Consumer>
           {context => {
             return (
-              <li key={country.alpha3Code} onClick={context.selectCountryFunc}>
-                <h4>{country.name}</h4>
+              <li key={country.alpha3Code} >
+                <h4 onClick={context.selectCountryFunc}>{country.name}</h4>
                 <p>
                   {country.subregion ? (
                     country.subregion
