@@ -9,7 +9,7 @@ export class CountryItem extends Component {
         {
           <li key={country.alpha3Code}>
             <h4>{country.name}</h4>
-            <p>{country.subregion ? country.subregion : <p>No subregion</p>}</p>
+            <p>{country.subregion ? country.subregion : <span>No subregion</span>}</p>
           </li>
         }
       </React.Fragment>

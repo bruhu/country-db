@@ -6,7 +6,7 @@ export default class AppProvider extends React.Component {
     super(props);
     this.state = {
       data: null,
-      name: "Bru"
+      
     };
   }
 
