@@ -35,10 +35,7 @@ export class CountryDisplay extends Component {
                     </div>
                   </div>
                 ))
-
-
-            )
-              
+            )              
           }}
         </AppContext.Consumer>
       </div>
