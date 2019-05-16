@@ -5,12 +5,7 @@ export class CountryDisplay extends Component {
   render() {
     return (
       <div className="country-display">
-        <AppContext.Consumer>
-          {context => {
-            return (
-              context.data &&
-              context.data.map((country, index) => (
-                <div className="country-display-container" key={index}>
+                <div className="country-display-container" key={this.props.index}>
                   <AppContext.Consumer>
                     {context => {
                       return (
@@ -27,7 +22,7 @@ export class CountryDisplay extends Component {
                             <img
                               src={context.selectCountry.flag}
                               className="country-disp-img"
-                              key={index}
+                              key={this.props.index}
                               alt="country flag"
                             />
                           </div>
@@ -36,10 +31,6 @@ export class CountryDisplay extends Component {
                     }}
                   </AppContext.Consumer>
                 </div>
-              ))
-            );
-          }}
-        </AppContext.Consumer>
       </div>
     );
   }
