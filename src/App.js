@@ -6,20 +6,7 @@ import CountryDisplay from "./Components/CountryDisplay";
 import AppProvider from "./Components/AppProvider";
 
 export class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     data: null
-  //   };
-  // }
-
-  // componentDidMount() {
-  //   fetch("https://restcountries.eu/rest/v2/all")
-  //     .then(resp => resp.json())
-  //     .then(data => this.setState({ data }))
-  //     .catch(error => console.error);
-  // }
-
+  
   render() {
     return (
       <AppProvider>
@@ -34,18 +21,6 @@ export class App extends React.Component {
     );
   }
 }
-
-// render() {
-//   return (
-//     <React.Fragment>
-//       <Navbar />
-//       <div className="country-components-container">
-//         <CountryListSidebar data={this.state.data} />
-//         <CountryDisplay data={this.state.data}/>
-//       </div>
-//     </React.Fragment>
-//   );
-// }
 
 export default App;
 
