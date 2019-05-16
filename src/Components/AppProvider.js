@@ -1,6 +1,5 @@
 import React from "react";
 import AppContext from "./AppContext";
-
 export default class AppProvider extends React.Component {
   constructor(props) {
     super(props);
