@@ -12,7 +12,12 @@ export class CountryListSidebar extends Component {
             <AppContext.Consumer>
               {context =>
                 context.data &&
-                context.data.map((country, index) => (
+                context.data.filter(country => {
+                  if (context.search.length === 0) return true;
+                  return country.name
+                    .toLowerCase()
+                    .includes(context.search.toLowerCase());
+                }).map((country, index) => (
                   <CountryItem country={country} key={index} />
                 ))
               }
