@@ -28,12 +28,3 @@ export class CountryItem extends Component {
 }
 
 export default CountryItem;
-
-{
-  /* <li key={country.alpha3Code}>
-          <h4>{country.name}</h4>
-          <p>
-            {country.subregion ? country.subregion : <span>No subregion</span>}
-          </p>
-        </li> */
-}
