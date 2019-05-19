@@ -5,6 +5,7 @@ import "./CountryItem.css";
 export class CountryItem extends Component {
   render() {
     const { country } = this.props;
+    let filteredCountries = this.props.countries;
     return (
       <React.Fragment>
         <AppContext.Consumer>
