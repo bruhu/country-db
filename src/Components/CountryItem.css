@@ -1,0 +1,9 @@
+.sidebar-countryname {
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+}
+
+.sidebar-countryname:hover{
+    color: rgb(54, 54, 54);
+    /* text-decoration: underline solid black; */
+}
