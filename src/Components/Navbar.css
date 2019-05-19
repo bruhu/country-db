@@ -24,3 +24,7 @@ nav {
   border: solid 1px rgb(182, 182, 182);
   color: white;
 }
+
+.country-search-input {
+  padding-left: 1em;
+}

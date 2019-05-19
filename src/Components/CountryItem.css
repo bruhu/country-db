@@ -1,9 +1,12 @@
 .sidebar-countryname {
   cursor: pointer;
-  color: rgb(182, 182, 182);
+  /* color: rgb(182, 182, 182); */
+  color: rgb(54, 54, 54);
+  transition: 0.5s;
 }
 
-.sidebar-countryname:hover{
-    color: rgb(54, 54, 54);
-    /* text-decoration: underline solid black; */
+.sidebar-countryname:hover {
+  color: rosybrown;
+  /* text-decoration: underline solid black; */
+  transition: 0.5s;
 }
