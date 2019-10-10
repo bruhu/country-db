@@ -18,9 +18,9 @@ export class Navbar extends Component {
               );
             }}
           </AppContext.Consumer>
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <button className="dropbtn">Language: EN</button>
-          </div>
+          </div> */}
         </nav>
       </React.Fragment>
     );
