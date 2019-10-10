@@ -2,7 +2,7 @@
   "name": "country_db",
   "version": "0.1.0",
   "private": true,
-  "homepage": "country-db",
+  "homepage": "https://bruhu.github.io/country-db",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "eslint-utils": "^1.4.2",
